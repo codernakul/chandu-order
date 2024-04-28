@@ -58,14 +58,16 @@ span {
   <div class="container">
     <h1>Items</h1>
     <ul id="item-list" class="list-group"></ul>
-    <div class="input-group mb-3">
+    
+    <p id="total-amount" class="text-end">Total Amount: ₹0.00</p>
+  </div>
+  <button onclick="downloadItems()">Download Receipt</button>
+  <h4>To add more items</h4>
+  <div class="input-group mb-3">
       <input type="text" id="new-item" class="form-control" placeholder="Enter item name">
       <input type="number" id="new-rate" class="form-control" placeholder="Enter rate">
       <button onclick="addItem()" class="btn btn-primary">Add Item</button>
     </div>
-    <p id="total-amount" class="text-end">Total Amount: ₹0.00</p>
-  </div>
-  <button onclick="downloadItems()">Download Receipt</button>
   <script src="script.js"></script>
 </body>
 </html>
